@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory 
+		android:title="Authentication"
+		android:key="authentication">
+		
+		<EditTextPreference
+			android:name="Password"
+			android:summary="Promenite Vault Lozinku"
+			android:defaultValue=""
+			android:title="Vault Lozinka"
+			android:key="password"
+			android:password="true"
+			android:inputType="number" />
+			
+	</PreferenceCategory>
+	
+</PreferenceScreen>

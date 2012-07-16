@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:inputType="textPhonetic"
+        android:hint="Naziv">
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="0.13"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:hint="Sadržaj" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip" >
+        
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dip"
+            android:layout_weight="0.3"
+            android:text="Save"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:onClick="save" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="0.3"
+            android:text="Delete"
+            android:drawableLeft="@android:drawable/ic_menu_delete"
+            android:onClick="delete" />
+
+    </LinearLayout>
+
+</LinearLayout>
