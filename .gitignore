@@ -1,8 +1,15 @@
 *.class
 
+
 # Package Files #
+
 *.jar
+
 *.war
+
 *.ear
-bin
-gen
+
+# User Defined #
+bin/*
+bin/res/*
+gen/*
