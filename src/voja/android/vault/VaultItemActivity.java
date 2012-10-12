@@ -58,7 +58,6 @@ public class VaultItemActivity extends Activity {
 			try {
 				value = SimpleCrypto.encrypt(value);
 			} catch (Exception e1) {
-				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
 			if(key.equals("__NEW__")) {
@@ -91,7 +90,6 @@ public class VaultItemActivity extends Activity {
 	        .setMessage("Da li želite da obrišete stavku '"+key+"'?")
 	        .setPositiveButton("Da", new DialogInterface.OnClickListener() {
 	
-	            @Override
 	            public void onClick(DialogInterface dialog, int which) {
 	            	if(!key.equals("")) {
 	        			database.db.execSQL("DELETE FROM data WHERE key='"+key+"'");

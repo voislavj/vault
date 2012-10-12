@@ -130,7 +130,6 @@ public class VaultActivity extends Activity {
 	        .setMessage("Da li želite da izađete iz aplikacije?")
 	        .setPositiveButton("Da", new DialogInterface.OnClickListener() {
 
-	            @Override
 	            public void onClick(DialogInterface dialog, int which) {
 	                //Stop the activity
 	            	VaultActivity.this.onDestroy();
@@ -175,7 +174,6 @@ public class VaultActivity extends Activity {
 		
 		MenuItem mnuSettings = menu.add("Podešavanja").setIcon(android.R.drawable.ic_menu_preferences);
 		mnuSettings.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-			@Override
 			public boolean onMenuItemClick(MenuItem item) {
 				Intent settingsActivity = new Intent(getBaseContext(),Preferences.class);
 		        startActivity(settingsActivity);
@@ -189,7 +187,6 @@ public class VaultActivity extends Activity {
 		
 		MenuItem subCreateNew = mnuCreate.add("Nov tekst");
 		subCreateNew.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-			@Override
 			public boolean onMenuItemClick(MenuItem item) {
 				Intent itemActivity = new Intent(getBaseContext(),VaultItemActivity.class);
 				itemActivity.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
@@ -201,7 +198,6 @@ public class VaultActivity extends Activity {
 		});
 		MenuItem subAddExt = mnuCreate.add("Postojeći fajl");
 		subAddExt.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-			@Override
 			public boolean onMenuItemClick(MenuItem item) {
 				Intent ChooseActivity = new Intent(getBaseContext(),FileChoose.class);
 				ChooseActivity.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
@@ -213,7 +209,6 @@ public class VaultActivity extends Activity {
 		
 		MenuItem mnuExit = menu.add("Izlaz").setIcon(android.R.drawable.ic_lock_power_off);
 		mnuExit.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-			@Override
 			public boolean onMenuItemClick(MenuItem item) {
 				onDestroy();
 				finish();

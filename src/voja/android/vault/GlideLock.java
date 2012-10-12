@@ -36,7 +36,6 @@ public class GlideLock extends LinearLayout {
         totalAnimDx = dx;
         totalAnimDy = dy;
         post(new Runnable() {
-            @Override
             public void run() {
                 onAnimateStep();
             }
@@ -56,7 +55,6 @@ public class GlideLock extends LinearLayout {
 
         if (percentTime < 1.0f) {
             post(new Runnable() {
-                @Override
                 public void run() {
                     onAnimateStep();
                 }

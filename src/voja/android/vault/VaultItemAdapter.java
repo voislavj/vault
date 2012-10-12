@@ -32,25 +32,21 @@ public class VaultItemAdapter extends BaseAdapter {
         this.items = items;
     }
     
-	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
 		return items.size();
 	}
 
-	@Override
 	public Object getItem(int position) {
 		// TODO Auto-generated method stub
 		return items.get(position);
 	}
 
-	@Override
 	public long getItemId(int position) {
 		// TODO Auto-generated method stub
 		return items.get(position).hashCode();
 	}
 
-	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		LinearLayout lyt = new LinearLayout(mContext);
 		

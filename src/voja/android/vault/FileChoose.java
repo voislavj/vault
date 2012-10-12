@@ -37,7 +37,6 @@ public class FileChoose extends ListActivity {
 			isDir = dir;
 		}
 		
-		@Override
 		public int compareTo(Option another) {
 			if(this.name != null)
 				return this.name.toLowerCase().compareTo(another.name.toLowerCase());
