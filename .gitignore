@@ -9,8 +9,8 @@
 
 *.ear
 
+
 # User Defined #
 bin/*
 bin/res/*
 gen/*
-/bin
